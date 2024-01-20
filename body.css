@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Poller+One&family=Poppins:ital,wght@0,300;1,300&family=Raleway:ital,wght@0,300;0,600;1,300;1,400;1,500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     /* font-family: 'Poller One', serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* overflow-x: hidden; */
+}
+
+.container-1{
+    background-image: url("./header-image/bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+
+.box{
+    position: absolute;
+    top: 56%;
+    left: 52%;
+    transform: translate(-55%, -52%);
+    width: 600px;
+    height: 340px;
+    background: #800E9C;
+    border-radius: 20px;
+    display: flex;
+}
+
+.image img{
+    opacity: 0.1;
+    width: 50px;
+    height: 60px;
+    color: #000;
+    transform: rotate(40deg);
+}
+
+.image h1{
+    text-align: center;
+    font-family: 'Poller One', serif;
+    color: #B0FF9C;
+    font-size: 25px;
+    font-weight: 400;
+    position: relative;
+    bottom: 70px;
+}
+
+.image p{
+    width: 430px;
+    text-align: center;
+    margin-left: 5rem;
+    margin-top: 0.8rem;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    bottom: 70px;
+}
+
+button{
+    text-align: center;
+    position: relative;
+    left: 27%;
+    padding: 10px 40px;
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 50px;
+    border: none;
+    position: relative;
+    bottom: 70px;
+}
+
+
+.group img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: -5%;
+    transform: translate(-50%,5%);
+
+}
+
+/*** Responsive-1 ***/
+@media screen and (max-width:768px) {
+
+    .container-1{
+        background-image: url("./header-image/image-1.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box{
+        flex-wrap: wrap;
+        width: 340px;
+        height: 470px;
+        margin-left: 1rem;
+        margin-top: -5rem;
+    }
+
+    .image h1{
+        font-size: 25px;
+        width: 230px;
+        margin-left: 15%;
+        position: relative;
+        bottom: 150px;
+    }
+
+    .image p{
+        right: 10%;
+        width: 240px;
+        font-size: 18px;
+        position: relative;
+        bottom: 140px;
+        line-height: 30px;
+    }
+
+
+    button{
+        position: relative;
+        bottom: 150px;
+        left: 1rem;
+        border: none;
+    }
+}
